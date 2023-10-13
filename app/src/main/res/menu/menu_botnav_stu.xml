@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/botnav_stu_trangchu" android:title="Trang chủ" android:icon="@drawable/home_ico"/>
+    <item android:id="@+id/botnav_stu_tkb" android:title="Thời khóa biểu" android:icon="@drawable/timetable_ico"/>
+    <item android:id="@+id/botnav_stu_drl" android:title="Điểm rèn luyện" android:icon="@drawable/drl_ico"/>
+
+
+</menu>

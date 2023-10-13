@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="389dp"
+        android:layout_height="310dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:text="Xác nhận xóa Môn học"
+            android:textSize="70px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-300dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="Xác nhận sẽ xóa môn học này ra khỏi danh sách ?"
+            android:textSize="60px" />
+
+        <EditText
+            android:id="@+id/ojId_inputToDel"
+            android:layout_width="269dp"
+            android:layout_height="71dp"
+            android:layout_marginStart="-320dp"
+            android:layout_marginTop="150dp"
+            android:hint="Nhập Mã môn để xác nhận xóa"
+            android:textColor="@color/black" />
+
+
+        <Button
+            android:id="@+id/confirm_btn_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-110dp"
+            android:layout_marginLeft="-120dp"
+            android:layout_marginTop="240dp"
+            android:text="Xác nhận" />
+
+        <Button
+            android:id="@+id/confirm_btn_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-280dp"
+            android:layout_marginLeft="-120dp"
+            android:layout_marginTop="240dp"
+            android:text="Hủy" />
+
+    </LinearLayout>
+
+</LinearLayout>

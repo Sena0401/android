@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".stu_home">
+
+    <LinearLayout
+        android:layout_width="402dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="10dp">
+
+        <TextView
+            android:layout_width="101dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:text="Xin Chào !"
+            android:textSize="49px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/stu_name"
+            android:layout_width="245dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textSize="60px"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpgr_stu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="@id/botnav_stu"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/botnav_stu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemIconTint="@color/color_botnav"
+        app:itemTextColor="@color/color_botnav"
+        app:labelVisibilityMode="selected"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu_botnav_stu" />
+
+
+    <RelativeLayout
+        android:id="@+id/stu_home_btns"
+        android:layout_width="match_parent"
+        android:layout_height="447dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:background="#3352b69a"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_kqht"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="291dp"
+            android:backgroundTint="@color/white"
+            android:shadowColor="@color/black"
+            android:text="Kết quả học tập"
+            android:textColor="@color/black"
+            android:textSize="30px" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_info"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/white"
+            android:shadowColor="@color/black"
+            android:text="Thông tin cá nhân"
+            android:textColor="@color/black"
+            android:textSize="30px" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_cdxqt"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="101dp"
+            android:layout_marginEnd="7dp"
+            android:backgroundTint="@color/white"
+            android:shadowColor="@color/black"
+            android:text="CÁC ĐỢT XET QUAN TRỌNG"
+            android:textColor="@color/black"
+            android:textSize="30px" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_ctdt"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="302dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/white"
+            android:shadowColor="@color/black"
+            android:text="CHƯƠNG TRÌNH ĐÀO TẠO"
+            android:textColor="@color/black"
+            android:textSize="30px" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_dkhkp"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="96dp"
+            android:layout_marginEnd="143dp"
+            android:backgroundTint="@color/white"
+            android:shadowColor="@color/black"
+            android:text="ĐĂNG KÍ HỌC KỲ PHỤ"
+            android:textColor="@color/black"
+            android:textSize="30px" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_lt"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="140dp"
+            android:backgroundTint="@color/white"
+            android:shadowColor="@color/black"
+            android:text="LỊCH THI"
+            android:textColor="@color/black"
+            android:textSize="30px" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_pksmh"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="99dp"
+            android:layout_marginEnd="281dp"
+            android:backgroundTint="@color/white"
+            android:shadowColor="@color/black"
+            android:text="PHIẾU KHẢO SÁT MÔN HỌC"
+            android:textColor="@color/black"
+            android:textSize="30px" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_bmct"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="198dp"
+            android:layout_marginEnd="286dp"
+            android:backgroundTint="@color/white"
+            android:shadowColor="@color/black"
+            android:text="BIỂU MẪU CẦN THIẾT"
+            android:textColor="@color/black"
+            android:textSize="30px" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_pkstk"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="197dp"
+            android:layout_marginEnd="144dp"
+            android:backgroundTint="@color/white"
+            android:shadowColor="@color/black"
+            android:text="PKS TOÀN KHOA"
+            android:textColor="@color/black"
+            android:textSize="30px" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="200dp"
+            android:layout_marginEnd="9dp"
+            android:backgroundTint="@color/white"
+            android:shadowColor="@color/black"
+            android:text="KẾT QUẢ TỐT NGHIỆP"
+            android:textColor="@color/black"
+            android:textSize="30px" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_tcvb"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="298dp"
+            android:layout_marginEnd="150dp"
+            android:backgroundTint="@color/white"
+            android:shadowColor="@color/black"
+            android:text="TRA CỨU VĂN BẰNG"
+            android:textColor="@color/black"
+            android:textSize="30px" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_lh"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="305dp"
+            android:layout_marginEnd="286dp"
+            android:backgroundTint="@color/white"
+            android:shadowColor="@color/black"
+            android:text="Liên hệ"
+            android:textColor="@color/black"
+            android:textSize="30px" />
+
+
+</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="412dp"
+        android:layout_height="324dp"
+        android:background="#2052b69a"
+        android:orientation="horizontal"
+        android:outlineSpotShadowColor="@color/black"
+        android:layout_margin="10dp"
+        tools:ignore="MissingConstraints">
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10px"
+                android:gravity="center"
+                android:text="Tạo tài khoản Giảng viên"
+                android:textSize="60px"
+                android:textStyle="bold"/>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MSGV : "
+                    android:textSize="40px" />
+
+                <EditText
+                    android:id="@+id/tch_add_msgv"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+
+                    android:hint="VD : NTKIEN-IT-1234" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mật Khẩu : "
+                    android:textSize="40px" />
+
+                <EditText
+                    android:id="@+id/tch_add_mkdn"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:hint="1245"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Họ và tên : "
+                    android:textSize="40px" />
+
+                <EditText
+                    android:id="@+id/tch_add_hoten"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:hint="Nguyễn Trung Kiên" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mã lớp Giảng Dạy : "
+                    android:textSize="40px" />
+
+                <EditText
+                    android:id="@+id/tch_add_mlop"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:hint="VD : CCNTT21A"
+                    />
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:id="@+id/btn_tch_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-180dp"
+            android:layout_marginTop="250dp"
+            android:text="Thêm" />
+
+        <Button
+            android:id="@+id/btn_tch_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-280dp"
+            android:layout_marginTop="250dp"
+            android:text="Hủy" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
